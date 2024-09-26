@@ -26,7 +26,7 @@ namespace VemDeZap.Api.Controllers
 
         [Authorize]
         [HttpGet]
-        public async Task<IActionResult> ListarGrupo( )
+        public async Task<IActionResult> Get( )
         {
             try
             {
@@ -42,7 +42,7 @@ namespace VemDeZap.Api.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AdicionarGrupo( [FromBody] AdicionarGrupoRequest request )
+        public async Task<IActionResult> Post( [FromBody] AdicionarGrupoRequest request )
         {
             try
             {
@@ -62,7 +62,7 @@ namespace VemDeZap.Api.Controllers
 
         [Authorize]
         [HttpPut]
-        public async Task<IActionResult> AlterarGrupo( [FromBody] AlterarGrupoRequest request )
+        public async Task<IActionResult> Put( [FromBody] AlterarGrupoRequest request )
         {
             try
             {
@@ -83,7 +83,7 @@ namespace VemDeZap.Api.Controllers
         [Authorize]
         [HttpDelete]
         [Route( "{id:Guid}" )]
-        public async Task<IActionResult> RemoverGrupo( Guid id )
+        public async Task<IActionResult> Delete( Guid id )
         {
             try
             {
