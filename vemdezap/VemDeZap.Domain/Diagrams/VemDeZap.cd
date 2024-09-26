@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VemDeZap.Domain.Entities.UsuarioEntity">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="VemDeZap.Domain.Entities.Base.EntityBase" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="7.25" />
+        <Point X="6" Y="6.875" />
+        <Point X="4.875" Y="6.875" />
+        <Point X="4.875" Y="5.405" />
+        <Point X="5.25" Y="5.405" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Entities\UsuarioEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VemDeZap.Domain.Entities.GrupoEntity">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="VemDeZap.Domain.Entities.Base.EntityBase" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="7.25" />
+        <Point X="6" Y="6.875" />
+        <Point X="9.875" Y="6.875" />
+        <Point X="9.875" Y="5.438" />
+        <Point X="9.5" Y="5.438" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>Entities\GrupoEntity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Usuario" />
+      <Property Name="Nicho" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VemDeZap.Domain.Entities.ContatoEntity">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <AssociationLine Name="Usuario" Type="VemDeZap.Domain.Entities.UsuarioEntity" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="5.215" />
+        <Point X="4.875" Y="5.215" />
+        <Point X="4.875" Y="5" />
+        <Point X="5.25" Y="5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Nicho" Type="VemDeZap.Domain.Enums.EnumNicho" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="5.25" />
+        <Point X="2.125" Y="5.25" />
+        <Point X="2.125" Y="2.688" />
+        <Point X="2.5" Y="2.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>Entities\ContatoEntity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Usuario" />
+      <Property Name="Nicho" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VemDeZap.Domain.Entities.CampanhaEntity">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="VemDeZap.Domain.Entities.Base.EntityBase" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="7.25" />
+        <Point X="6" Y="6.875" />
+        <Point X="4.875" Y="6.875" />
+        <Point X="4.875" Y="2.625" />
+        <Point X="5.25" Y="2.625" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Entities\CampanhaEntity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VemDeZap.Domain.Entities.Envio">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAUAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\EnvioEntity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Campanha" />
+      <Property Name="Grupo" />
+      <Property Name="Contato" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VemDeZap.Domain.Entities.Base.EntityBase" Collapsed="true">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Base\EntityBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="VemDeZap.Domain.Enums.EnumNicho" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAMAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\EnumNicho.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
